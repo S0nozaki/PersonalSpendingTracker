@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box
+}
+body {
+    background-color: rgb(122, 149, 175);
+    color:#485e74;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+}
+#container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    /*color: rgb(141, 181, 181);*/
+    color:rgb(208, 231, 247);
+}
+.wrapper{
+    box-shadow: 0 0 20px 0 rgba(122, 149, 175, 0.7);
+}
+
+.wrapper > * {
+    padding: 1em;
+}
+.wrapper .description{
+    text-align: center;
+    background:rgba(169, 230, 189, 0.4)
+}
+.spending-form{
+    background: white;
+}
+
+.spending-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
+
+.spending-form form label{
+    display:block;
+}
+
+.spending-form form p{
+    margin:0;
+}
+
+.spending-form form .full{
+    grid-column: 1/4;
+}
+
+.spending-form form button, .spending-form form input{
+    width: 100%;
+    padding: 0.6em;
+    border: 1px solid rgb(141, 181, 181);
+}
+
+.spending-form form button{
+    background: rgb(141, 181, 181);
+    border: 0;
+}
+
+.spending-form form button:hover,.spending-form form button:focus{
+    background: rgb(122, 149, 175);
+    color: rgb(208, 231, 247);
+    outline: 0;
+    transition: background-color 0.8s ease-out
+}
+
